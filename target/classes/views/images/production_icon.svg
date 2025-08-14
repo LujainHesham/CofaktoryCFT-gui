@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Coffee Plant -->
+  <path d="M64 100 L64 50" stroke="#3A2618" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Coffee Beans -->
+  <ellipse cx="50" cy="40" rx="12" ry="8" transform="rotate(-30 50 40)" fill="#6F4E37" />
+  <ellipse cx="78" cy="40" rx="12" ry="8" transform="rotate(30 78 40)" fill="#6F4E37" />
+  <ellipse cx="64" cy="30" rx="12" ry="8" fill="#6F4E37" />
+  
+  <!-- Leaf Left -->
+  <path d="M64 60 Q45 50, 40 30 Q60 40, 64 60" fill="#4CAF50" />
+  <path d="M64 60 Q45 50, 40 30" fill="none" stroke="#2E7D32" stroke-width="1" />
+  
+  <!-- Leaf Right -->
+  <path d="M64 60 Q83 50, 88 30 Q68 40, 64 60" fill="#4CAF50" />
+  <path d="M64 60 Q83 50, 88 30" fill="none" stroke="#2E7D32" stroke-width="1" />
+  
+  <!-- Leaf Bottom Left -->
+  <path d="M64 80 Q45 70, 35 50 Q60 65, 64 80" fill="#4CAF50" />
+  <path d="M64 80 Q45 70, 35 50" fill="none" stroke="#2E7D32" stroke-width="1" />
+  
+  <!-- Leaf Bottom Right -->
+  <path d="M64 80 Q83 70, 93 50 Q68 65, 64 80" fill="#4CAF50" />
+  <path d="M64 80 Q83 70, 93 50" fill="none" stroke="#2E7D32" stroke-width="1" />
+  
+  <!-- Ground -->
+  <path d="M30 100 Q64 90, 98 100 Q64 110, 30 100" fill="#795548" />
+</svg> 

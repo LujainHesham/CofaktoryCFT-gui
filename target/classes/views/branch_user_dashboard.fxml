@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cofaktory.footprint.controllers.BranchDataEntryController">
+    <VBox spacing="8" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+        <HBox alignment="CENTER_LEFT" spacing="16">
+            <padding>
+                <Insets bottom="8" left="8" right="8" top="8" />
+            </padding>
+            <Label text="Branch ID:" />
+            <Label fx:id="branchIDLabel" />
+            <Label text="User ID:" />
+            <Label fx:id="userIDLabel" />
+            <Button fx:id="logoutButton" onAction="#handleLogout" prefWidth="100" style="-fx-background-color: #ff5555; -fx-text-fill: white; -fx-font-weight: bold;" text="Log Out" />
+        </HBox>
+        <Label fx:id="branchInfoLabel" text="" />
+        <TabPane fx:id="mainTabPane" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <!-- Production Tab -->
+                <Tab fx:id="productionTab" text="Production">
+                    <AnchorPane>
+                        <VBox alignment="TOP_LEFT" spacing="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+                            <HBox spacing="8">
+                                <Label text="Supplier:" />
+                                <TextField fx:id="supplierField" />
+                                <Label text="Coffee Type:" />
+                                <ComboBox fx:id="coffeeTypeComboBox" />
+                                <Label text="Product Type:" />
+                                <ComboBox fx:id="productTypeComboBox" />
+                                <Label text="Quantity (KG):" />
+                                <TextField fx:id="quantityField" />
+                                <Label text="Production Date:" />
+                                <DatePicker fx:id="productionDatePicker" />
+                            </HBox>
+                            <HBox spacing="8">
+                                <Button onAction="#handleUpdateProduction" text="Update" />
+                                <!--> <Button text="Add" onAction="#handleAddProduction"/>
+                                 <Button text="Delete" onAction="#handleDeleteProduction"/> -->
+                                <Button onAction="#handleRefreshProduction" text="Refresh" />
+                            </HBox>
+                            <TableView fx:id="productionTable" prefHeight="220.0">
+                                <columns>
+                                    <TableColumn fx:id="productionIDColumn" prefWidth="60" text="ID" />
+                                    <TableColumn fx:id="supplierColumn" prefWidth="110" text="Supplier" />
+                                    <TableColumn fx:id="coffeeTypeColumn" prefWidth="110" text="Coffee Type" />
+                                    <TableColumn fx:id="productTypeColumn" prefWidth="100" text="Product Type" />
+                                    <TableColumn fx:id="quantityColumn" prefWidth="120" text="Quantity (KG)" />
+                                    <TableColumn fx:id="productionDateColumn" prefWidth="120" text="Production Date" />
+                                </columns>
+                            </TableView>
+                        </VBox>
+                    </AnchorPane>
+                </Tab>
+                <!-- Packaging Tab -->
+                <Tab fx:id="packagingTab" text="Packaging">
+                    <AnchorPane>
+                        <VBox alignment="TOP_LEFT" spacing="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+                            <HBox spacing="8">
+                                <Label text="Packaging Waste (KG):" />
+                                <TextField fx:id="packagingWasteField" />
+                                <Label text="Packaging Date:" />
+                                <DatePicker fx:id="packagingDatePicker" />
+                            </HBox>
+                            <HBox spacing="8">
+
+                                <Button onAction="#handleUpdatePackaging" text="Update" />
+
+                                <Button onAction="#handleRefreshPackaging" text="Refresh" />
+                            </HBox>
+                            <TableView fx:id="packagingTable" prefHeight="220.0">
+                                <columns>
+                                    <TableColumn fx:id="packagingIDColumn" prefWidth="70" text="ID" />
+                                    <TableColumn fx:id="packagingWasteColumn" prefWidth="120" text="Waste (KG)" />
+                                    <TableColumn fx:id="paCarbonEmissionsColumn" prefWidth="150" text="CO₂ Emissions (KG)" />
+                                    <TableColumn fx:id="packagingDateColumn" prefWidth="120" text="Packaging Date" />
+                                </columns>
+                            </TableView>
+                        </VBox>
+                    </AnchorPane>
+                </Tab>
+                <!-- Distribution Tab -->
+                <Tab fx:id="distributionTab" text="Distribution">
+                    <AnchorPane>
+                        <VBox alignment="TOP_LEFT" spacing="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+                            <HBox spacing="8">
+                                <Label text="Vehicle Type:" />
+                                <ComboBox fx:id="vehicleTypeComboBox" />
+                                <Label text="Number of Vehicles:" />
+                                <TextField fx:id="numberOfVehiclesField" />
+                                <Label text="Distance Per Vehicle (KM):" />
+                                <TextField fx:id="distancePerVehicleField" />
+                                <Label text="Distribution Date:" />
+                                <DatePicker fx:id="distributionDatePicker" />
+                            </HBox>
+                            <HBox spacing="8">
+
+                                <Button onAction="#handleUpdateDistribution" text="Update" />
+
+                                <Button onAction="#handleRefreshDistribution" text="Refresh" />
+                            </HBox>
+                            <TableView fx:id="distributionTable" prefHeight="220.0">
+                                <columns>
+                                    <TableColumn fx:id="distributionIDColumn" prefWidth="70" text="ID" />
+                                    <TableColumn fx:id="vehicleTypeColumn" prefWidth="110" text="Vehicle Type" />
+                                    <TableColumn fx:id="numberOfVehiclesColumn" prefWidth="100" text="Number" />
+                                    <TableColumn fx:id="distancePerVehicleColumn" prefWidth="140" text="Distance/Vehicle (KM)" />
+                                    <TableColumn fx:id="totalDistanceColumn" prefWidth="140" text="Total Distance (KM)" />
+                                    <TableColumn fx:id="fuelEfficiencyColumn" prefWidth="80" text="Fuel Eff." />
+                                    <TableColumn fx:id="vCarbonEmissionsColumn" prefWidth="150" text="CO₂ Emissions (KG)" />
+                                    <TableColumn fx:id="distributionDateColumn" prefWidth="120" text="Distribution Date" />
+                                </columns>
+                            </TableView>
+                        </VBox>
+                    </AnchorPane>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </VBox>
+</AnchorPane>

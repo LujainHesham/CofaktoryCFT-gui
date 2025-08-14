@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Delivery Van Body -->
+  <rect x="20" y="60" width="70" height="30" fill="#6F4E37" rx="5" ry="5" />
+  <rect x="10" y="75" width="20" height="15" fill="#6F4E37" rx="2" ry="2" />
+  
+  <!-- Van Cabin -->
+  <path d="M10 75 L10 55 Q10 45, 25 45 L30 45 L30 75 Z" fill="#B1907F" />
+  <rect x="15" y="50" width="10" height="10" fill="#A5D6A7" />
+  
+  <!-- Wheels -->
+  <circle cx="25" cy="90" r="8" fill="#333333" />
+  <circle cx="25" cy="90" r="4" fill="#888888" />
+  <circle cx="80" cy="90" r="8" fill="#333333" />
+  <circle cx="80" cy="90" r="4" fill="#888888" />
+  
+  <!-- Coffee Cup Logo -->
+  <path d="M50 70 L50 55 Q50 50, 60 50 Q70 50, 70 55 L70 70 Z" fill="#D2B48C" />
+  <path d="M70 60 Q75 60, 75 65 Q75 70, 70 70" fill="none" stroke="#D2B48C" stroke-width="2" />
+  <path d="M55 50 Q57 45, 60 47 Q63 49, 65 45" fill="none" stroke="#4CAF50" stroke-width="1.5" />
+  
+  <!-- Road -->
+  <rect x="0" y="98" width="128" height="10" fill="#555555" />
+  <path d="M5 103 L15 103" stroke="white" stroke-width="2" stroke-dasharray="5,5" />
+  <path d="M25 103 L35 103" stroke="white" stroke-width="2" stroke-dasharray="5,5" />
+  <path d="M45 103 L55 103" stroke="white" stroke-width="2" stroke-dasharray="5,5" />
+  <path d="M65 103 L75 103" stroke="white" stroke-width="2" stroke-dasharray="5,5" />
+  <path d="M85 103 L95 103" stroke="white" stroke-width="2" stroke-dasharray="5,5" />
+  <path d="M105 103 L115 103" stroke="white" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Eco Symbol -->
+  <g transform="translate(105, 40) scale(0.4)">
+    <path d="M0,-30 Q30,-30, 30,0 Q30,30, 0,30 Q-30,30, -30,0 Q-30,-30, 0,-30" fill="#4CAF50" />
+    <path d="M-10,-10 L0,-20 L10,-10 L10,10 L0,20 L-10,10 Z" fill="#F8F5F2" />
+  </g>
+</svg> 
