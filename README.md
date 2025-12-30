@@ -140,29 +140,6 @@ CREATE TABLE emissions_data (
 
 ## 📊 Project Development Journey
 
-### **Development Timeline (Solo)**
-```mermaid
-gantt
-    title Solo Development Timeline
-    dateFormat  YYYY-MM-DD
-    section Planning & Design
-    Requirements Analysis :2024-01-01, 7d
-    System Architecture :2024-01-08, 5d
-    UI/UX Design :2024-01-13, 5d
-    
-    section Implementation
-    Database Development :2024-01-18, 10d
-    Backend Logic :2024-01-28, 14d
-    Frontend Development :2024-02-11, 14d
-    Reporting Module :2024-02-25, 10d
-    
-    section Testing & Refinement
-    Unit Testing :2024-03-06, 7d
-    Integration Testing :2024-03-13, 7d
-    Performance Optimization :2024-03-20, 5d
-    Documentation :2024-03-25, 5d
-```
-
 ### **Challenges Overcome Independently**
 1. **Complex Business Logic**: Translated emission science into accurate algorithms
 2. **Database Optimization**: Designed efficient schemas for large datasets
