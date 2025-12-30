@@ -262,5 +262,3 @@ gantt
 **— Lujain Hesham, Solo Developer**
 
 ---
-
-This version highlights your **independence, technical depth, and project ownership**—exactly what recruiters look for in entry-level developers. It shows you can handle complex projects start-to-finish without hand-holding.
